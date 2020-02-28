@@ -10,16 +10,11 @@ require_once "Zend/Mail/Transport/Smtp.php";
 require_once __DIR__.'/vendor/autoload.php';
 use Zend_Mail_Message as MailMessage;
 
-$servername = "localhost";
-$username = "postfix";
-$password = "gilucheviboothoo";
-$dbname = "acct";
-//samoilov 13.05.2019 for authentificated send back////////////////
-//$config = array('auth' => 'login',
-//                'username' => 'no-reply@ksc.ru',
-//                'password' => 'emuXoorilaquot');
-//$transport = new Zend_Mail_Transport_Smtp('mail.ksc.ru', $config);
-////////////////////////////////////////////////////////////////////
+$servername = "hostaddress";
+$username = "";
+$password = "";
+$dbname = "";
+
 $parser = new PhpMimeMailParser\Parser();
 
 // read from stdin
